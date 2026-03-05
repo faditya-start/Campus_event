@@ -4,4 +4,8 @@
     <string name="start_meditation">Mulai Meditasi</string>
     <string name="settings">Pengaturan</string>
     <string name="app_version">Versi 1.0</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_title">Mindful Reminders\nfor Peaceful Days</string>
+    <string name="splash_swipe_text">SWIPE UP TO BEGIN</string>
 </resources>
