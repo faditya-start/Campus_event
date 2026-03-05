@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MindBell</string>
+    <string name="welcome_message">Selamat datang di MindBell. Mulai perjalanan mindfulness Anda hari ini.</string>
+    <string name="start_meditation">Mulai Meditasi</string>
+    <string name="settings">Pengaturan</string>
+    <string name="app_version">Versi 1.0</string>
+</resources>
