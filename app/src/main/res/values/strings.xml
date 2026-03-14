@@ -1,11 +1,28 @@
 <resources>
-    <string name="app_name">MindBell</string>
-    <string name="welcome_message">Selamat datang di MindBell. Mulai perjalanan mindfulness Anda hari ini.</string>
-    <string name="start_meditation">Mulai Meditasi</string>
-    <string name="settings">Pengaturan</string>
-    <string name="app_version">Versi 1.0</string>
+    <string name="app_name">Campus Event</string>
+    <string name="welcome_back">Halo, Daffa!</string>
+    <string name="sub_welcome">Temukan kegiatan menarik hari ini</string>
+    <string name="default_location">UPNVJ, Jakarta Selatan</string>
+    <string name="search_hint">Cari seminar, workshop, lomba...</string>
 
     <!-- Splash Screen -->
-    <string name="splash_title">Mindful Reminders\nfor Peaceful Days</string>
-    <string name="splash_swipe_text">SWIPE UP TO BEGIN</string>
+    <string name="splash_title">Campus\nEvent</string>
+    <string name="splash_subtitle">Explore and Join Campus Activities</string>
+
+    <!-- Categories -->
+    <string name="cat_seminar">Seminar</string>
+    <string name="cat_workshop">Workshop</string>
+    <string name="cat_lomba">Lomba</string>
+
+    <!-- Sections -->
+    <string name="featured_title">Kegiatan Unggulan</string>
+    <string name="latest_title">Kegiatan Terbaru</string>
+    <string name="see_all">Lihat Semua</string>
+    <string name="see_detail">Lihat Detail</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_explore">Explore</string>
+    <string name="nav_my_event">Event Saya</string>
+    <string name="nav_profile">Profile</string>
 </resources>
