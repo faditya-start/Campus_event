@@ -9,6 +9,11 @@
     <string name="splash_title">Campus\nEvent</string>
     <string name="splash_subtitle">Explore and Join Campus Activities</string>
 
+    <!-- Explore Page -->
+    <string name="explore_title">Temukan Inspirasi Baru</string>
+    <string name="cat_semua">Semua</string>
+    <string name="latest_for_you">Terbaru Untukmu</string>
+
     <!-- Categories -->
     <string name="cat_seminar">Seminar</string>
     <string name="cat_workshop">Workshop</string>
