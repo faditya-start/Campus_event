@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_light">
@@ -27,6 +26,7 @@
                     android:id="@+id/iv_profile"
                     android:layout_width="54dp"
                     android:layout_height="54dp"
+                    android:contentDescription="@string/desc_profile"
                     android:scaleType="centerCrop"
                     android:src="@drawable/campus_event"
                     app:shapeAppearanceOverlay="@style/CircleImage"
@@ -38,6 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="16dp"
+                    android:layout_toStartOf="@id/iv_notification"
                     android:layout_toEndOf="@id/iv_profile"
                     android:orientation="vertical">
 
@@ -63,6 +64,7 @@
                     android:layout_height="28dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
+                    android:contentDescription="@string/desc_notification"
                     android:src="@android:drawable/ic_popup_reminder"
                     app:tint="@color/text_dark"
                     android:clickable="true"
@@ -82,6 +84,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
+                    android:contentDescription="@string/desc_location_icon"
                     android:src="@android:drawable/ic_menu_mylocation"
                     app:tint="@color/primary_blue" />
 
@@ -98,6 +101,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
+                    android:contentDescription="@string/desc_back"
                     android:src="@android:drawable/arrow_down_float"
                     app:tint="@color/primary_blue" />
             </LinearLayout>
@@ -107,11 +111,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:layout_marginTop="16dp"
+                android:autofillHints="none"
                 android:background="@drawable/bg_common_rounded"
                 android:drawableStart="@android:drawable/ic_menu_search"
                 android:drawablePadding="12dp"
                 android:hint="@string/search_hint"
+                android:inputType="text"
                 android:paddingStart="16dp"
+                android:paddingEnd="16dp"
                 android:textSize="14sp" />
 
             <!-- Categories -->
@@ -164,6 +171,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/tv_see_all"
+                    android:layout_alignParentStart="true"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/featured_title"
                     android:textColor="@color/text_dark"
@@ -200,35 +209,31 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="180dp"
+                        android:contentDescription="@string/desc_event_image"
                         android:scaleType="centerCrop"
                         android:src="@drawable/tech_post" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="vertical"
                         android:padding="20dp">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:fontFamily="sans-serif-black"
+                            android:text="@string/event_intl_tech"
+                            android:textColor="@color/text_dark"
+                            android:textSize="18sp" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-black"
-                                android:text="International Tech Summit 2026"
-                                android:textColor="@color/text_dark"
-                                android:textSize="18sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="6dp"
-                                android:text="24 Okt 2026 • Auditorium Pusat"
-                                android:textColor="@color/text_grey"
-                                android:textSize="13sp" />
-                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="@string/event_intl_tech_info"
+                            android:textColor="@color/text_grey"
+                            android:textSize="13sp" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -260,6 +265,7 @@
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
+                        android:contentDescription="@string/desc_event_image"
                         android:scaleType="centerCrop"
                         android:src="@drawable/campus_event"
                         app:shapeAppearanceOverlay="@style/RoundedImage" />
@@ -274,7 +280,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-bold"
-                            android:text="Lomba Debat Nasional"
+                            android:text="@string/event_debat"
                             android:textColor="@color/text_dark"
                             android:textSize="16sp" />
 
@@ -282,7 +288,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="05 Nov 2026 • Gedung Serbaguna"
+                            android:text="@string/event_debat_info"
                             android:textColor="@color/text_grey"
                             android:textSize="13sp" />
                     </LinearLayout>

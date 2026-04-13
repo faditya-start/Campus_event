@@ -31,15 +31,13 @@ class EventDetailActivity : AppCompatActivity() {
         if (event != null) {
             // Update UI dengan data dari Repository
             findViewById<TextView>(R.id.tv_detail_title).text = event.namaEvent
-            findViewById<TextView>(R.id.tv_detail_info).text = "${event.tanggal} • ${event.lokasi}"
+            findViewById<TextView>(R.id.tv_detail_info).text = getString(R.string.event_info_placeholder, event.tanggal, event.lokasi)
             findViewById<ImageView>(R.id.iv_event_image).setImageResource(event.imageResId)
-            
-            // Set deskripsi (jika ada di layout)
-            // findViewById<TextView>(R.id.tv_detail_description).text = event.deskripsi
 
             findViewById<Button>(R.id.btn_register).setOnClickListener {
-                // Aksi Interaktif: Toast dengan pesan dinamis
-                Toast.makeText(this, "Berhasil mendaftar ke ${event.namaEvent}", Toast.LENGTH_SHORT).show()
+                // Aksi Interaktif: Toast dengan pesan dinamis menggunakan resource string
+                val message = getString(R.string.msg_registered_success, event.namaEvent)
+                Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
                 // Kembali ke home setelah beberapa detik
                 Handler(Looper.getMainLooper()).postDelayed({

@@ -17,6 +17,7 @@
             android:id="@+id/iv_item_image"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:contentDescription="@string/desc_event_image"
             android:scaleType="centerCrop"
             app:shapeAppearanceOverlay="@style/RoundedImage" />
 
@@ -32,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-bold"
-                android:text="Nama Event"
+                android:text="@string/event_name_placeholder"
                 android:textColor="@color/text_dark"
                 android:textSize="16sp" />
 
@@ -41,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="Penyelenggara"
+                android:text="@string/event_organizer_placeholder"
                 android:textColor="@color/primary_blue"
                 android:textSize="12sp" />
 
@@ -50,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Lokasi"
+                android:text="@string/event_location_placeholder"
                 android:textColor="@color/text_grey"
                 android:textSize="12sp" />
         </LinearLayout>

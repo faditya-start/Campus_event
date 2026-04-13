@@ -3,7 +3,7 @@
     <string name="welcome_back">Halo, Daffa!</string>
     <string name="sub_welcome">Temukan kegiatan menarik hari ini</string>
     <string name="default_location">UPNVJ, Jakarta Selatan</string>
-    <string name="search_hint">Cari seminar, workshop, lomba...</string>
+    <string name="search_hint">Cari seminar, workshop, lomba&#8230;</string>
 
     <!-- Splash Screen -->
     <string name="splash_title">Campus\nEvent</string>
@@ -13,6 +13,32 @@
     <string name="explore_title">Temukan Inspirasi Baru</string>
     <string name="cat_semua">Semua</string>
     <string name="latest_for_you">Terbaru Untukmu</string>
+    <string name="app_tagline">KampusKita</string>
+    <string name="event_tech_future">Tech Future Conference 2024</string>
+    <string name="event_tech_future_info">12 Nov • Gd. Rektorat</string>
+    <string name="event_uiux">UI/UX Design Fundamentals</string>
+    <string name="event_business">Business Plan Competition</string>
+    <string name="label_organisasi">ORGANISASI</string>
+    <string name="event_bem_oprec">Open Recruitment BEM &#8230;</string>
+    <string name="time_3_days">3 hari lagi</string>
+    <string name="count_500_registrants">500+ pendaftar</string>
+
+    <!-- Main Page -->
+    <string name="event_intl_tech">International Tech Summit 2026</string>
+    <string name="event_intl_tech_info">24 Okt 2026 • Auditorium Pusat</string>
+    <string name="event_debat">Lomba Debat Nasional</string>
+    <string name="event_debat_info">05 Nov 2026 • Gedung Serbaguna</string>
+
+    <!-- Event List & Detail -->
+    <string name="event_list_title">Daftar Acara Kampus</string>
+    <string name="search_event_hint">Cari acara&#8230;</string>
+    <string name="event_name_placeholder">Nama Event</string>
+    <string name="event_info_placeholder">%1$s • %2$s</string>
+    <string name="event_desc_placeholder">Deskripsi Event:\nBergabunglah dalam acara kampus yang luar biasa ini untuk memperluas wawasan dan jaringan Anda. Jangan sampai ketinggalan!</string>
+    <string name="btn_register">Daftar Event</string>
+    <string name="event_organizer_placeholder">Penyelenggara</string>
+    <string name="event_location_placeholder">Lokasi</string>
+    <string name="msg_registered_success">Berhasil mendaftar ke %1$s</string>
 
     <!-- Categories -->
     <string name="cat_seminar">Seminar</string>
@@ -30,4 +56,12 @@
     <string name="nav_explore">Explore</string>
     <string name="nav_my_event">Event Saya</string>
     <string name="nav_profile">Profile</string>
+
+    <!-- Accessibility -->
+    <string name="desc_back">Kembali</string>
+    <string name="desc_notification">Notifikasi</string>
+    <string name="desc_profile">Foto Profil</string>
+    <string name="desc_event_image">Gambar Event</string>
+    <string name="desc_location_icon">Ikon Lokasi</string>
+    <string name="desc_search_icon">Ikon Pencarian</string>
 </resources>

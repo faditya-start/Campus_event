@@ -12,6 +12,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginBottom="16dp"
+        android:contentDescription="@string/desc_back"
         android:src="@android:drawable/ic_menu_revert"
         app:tint="@color/text_dark"
         android:background="?attr/selectableItemBackgroundBorderless"
@@ -22,6 +23,7 @@
         android:id="@+id/iv_event_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:contentDescription="@string/desc_event_image"
         android:scaleType="centerCrop"
         android:src="@drawable/tech_post"
         android:layout_marginBottom="24dp"
@@ -33,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Nama Event"
+        android:text="@string/event_name_placeholder"
         android:textColor="@color/text_dark"
         android:textSize="24sp"
         android:layout_marginBottom="8dp" />
@@ -42,7 +44,7 @@
         android:id="@+id/tv_detail_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Info Waktu dan Tempat"
+        android:text="@string/event_info_placeholder"
         android:textColor="@color/text_grey"
         android:textSize="16sp"
         android:layout_marginBottom="32dp" />
@@ -50,7 +52,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Deskripsi Event:\nBergabunglah dalam acara kampus yang luar biasa ini untuk memperluas wawasan dan jaringan Anda. Jangan sampai ketinggalan!"
+        android:text="@string/event_desc_placeholder"
         android:textColor="@color/text_dark"
         android:textSize="14sp"
         android:layout_marginBottom="48dp" />
@@ -61,7 +63,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primary_blue"
         android:padding="16dp"
-        android:text="Daftar Event"
+        android:text="@string/btn_register"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textAllCaps="false" />

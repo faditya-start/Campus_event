@@ -24,6 +24,7 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_centerVertical="true"
+                android:contentDescription="@string/desc_back"
                 android:src="@android:drawable/ic_menu_revert"
                 app:tint="@color/text_dark"
                 android:background="?attr/selectableItemBackgroundBorderless"
@@ -37,7 +38,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_centerVertical="true"
                 android:fontFamily="sans-serif-black"
-                android:text="Daftar Acara Kampus"
+                android:text="@string/event_list_title"
                 android:textColor="@color/text_dark"
                 android:textSize="22sp" />
         </RelativeLayout>
@@ -46,11 +47,14 @@
             android:id="@+id/et_search_list"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:autofillHints="none"
             android:background="@drawable/bg_common_rounded"
             android:drawableStart="@android:drawable/ic_menu_search"
             android:drawablePadding="10dp"
-            android:hint="Cari acara..."
+            android:hint="@string/search_event_hint"
+            android:inputType="text"
             android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:textSize="14sp" />
     </LinearLayout>
 
