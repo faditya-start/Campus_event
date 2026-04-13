@@ -20,7 +20,7 @@
     <string name="cat_lomba">Lomba</string>
 
     <!-- Sections -->
-    <string name="featured_title">Kegiatan Unggulan</string>
+    <string name="featured_title">Kegiatan Yang Akan Datang</string>
     <string name="latest_title">Kegiatan Terbaru</string>
     <string name="see_all">Lihat Semua</string>
     <string name="see_detail">Lihat Detail</string>

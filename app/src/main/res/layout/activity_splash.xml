@@ -5,31 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <ImageView
-        android:id="@+id/iv_logo"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/logo_upnvj"
-        app:layout_constraintBottom_toTopOf="@+id/tv_app_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <TextView
-        android:id="@+id/tv_app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textColor="@color/primary_blue"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+    <!-- Splash Layout ini dikosongkan karena kita menggunakan SplashScreen API bawaan Android 12+ -->
+    <!-- Jika ingin menambahkan branding teks tambahan di bawah logo, bisa di sini -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

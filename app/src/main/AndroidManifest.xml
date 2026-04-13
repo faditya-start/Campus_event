@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/campus_event"
+        android:roundIcon="@drawable/campus_event"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MindBell">
 
@@ -25,6 +25,17 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".EventListActivity"
+            android:exported="false"
+            android:label="Daftar Event" />
+
+        <activity
+            android:name=".EventDetailActivity"
+            android:exported="false"
+            android:label="Detail Event" />
+
     </application>
 
 </manifest>

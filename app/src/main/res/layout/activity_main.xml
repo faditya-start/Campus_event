@@ -8,9 +8,7 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,7 +28,7 @@
                     android:layout_width="54dp"
                     android:layout_height="54dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/logo_upnvj"
+                    android:src="@drawable/campus_event"
                     app:shapeAppearanceOverlay="@style/CircleImage"
                     app:strokeColor="@color/border_grey"
                     app:strokeWidth="1dp" />
@@ -60,14 +58,15 @@
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="44dp"
-                    android:layout_height="44dp"
+                    android:id="@+id/iv_notification"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:background="@drawable/bg_rounded_card"
-                    android:padding="10dp"
                     android:src="@android:drawable/ic_popup_reminder"
-                    app:tint="@color/text_dark" />
+                    app:tint="@color/text_dark"
+                    android:clickable="true"
+                    android:focusable="true" />
             </RelativeLayout>
 
             <!-- Location Selector -->
@@ -75,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:background="@drawable/bg_rounded_card"
+                android:background="@drawable/bg_common_rounded"
                 android:backgroundTint="@color/secondary_blue"
                 android:gravity="center_vertical"
                 android:padding="14dp">
@@ -108,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/bg_search"
+                android:background="@drawable/bg_common_rounded"
                 android:drawableStart="@android:drawable/ic_menu_search"
                 android:drawablePadding="12dp"
                 android:hint="@string/search_hint"
@@ -139,7 +138,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_category_unselected"
+                    android:background="@drawable/bg_common_rounded"
                     android:gravity="center"
                     android:padding="12dp"
                     android:text="@string/cat_workshop"
@@ -149,7 +148,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_category_unselected"
+                    android:background="@drawable/bg_common_rounded"
                     android:gravity="center"
                     android:padding="12dp"
                     android:text="@string/cat_lomba"
@@ -171,21 +170,27 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tv_see_all"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:text="@string/see_all"
                     android:textColor="@color/primary_blue"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:clickable="true"
+                    android:focusable="true" />
             </RelativeLayout>
 
             <!-- Featured Card -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_featured_event"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="4dp">
+                app:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -256,7 +261,7 @@
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/logo_upnvj"
+                        android:src="@drawable/campus_event"
                         app:shapeAppearanceOverlay="@style/RoundedImage" />
 
                     <LinearLayout
@@ -286,99 +291,5 @@
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
-    <!-- Bottom Navigation Mockup -->
-    <LinearLayout
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/white"
-        android:elevation="12dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@android:drawable/ic_menu_today"
-                app:tint="@color/primary_blue" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="@string/nav_home"
-                android:textColor="@color/primary_blue"
-                android:textSize="10sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@android:drawable/ic_menu_compass"
-                app:tint="@color/text_grey" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="@string/nav_explore"
-                android:textColor="@color/text_grey"
-                android:textSize="10sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@android:drawable/ic_menu_month"
-                app:tint="@color/text_grey" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="@string/nav_my_event"
-                android:textColor="@color/text_grey"
-                android:textSize="10sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@android:drawable/ic_menu_myplaces"
-                app:tint="@color/text_grey" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="@string/nav_profile"
-                android:textColor="@color/text_grey"
-                android:textSize="10sp" />
-        </LinearLayout>
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
